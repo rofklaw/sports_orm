@@ -27,6 +27,114 @@
 			{% empty %}
 				<p>No teams found.  Try <code>python manage.py loaddata data.json</code>, or, if that doesn't work, going <a href="{% url 'make_data' %}">here</a> (but be prepared to wait).</p>
 			{% endfor %}
+
+
 		</ol>
+
+		<h1> baseball boyz </h1>
+		<ol>
+			{% for baseball in baseballs %}
+				<li>{{baseball.name}}</li>
+			{% endfor %}
+		</ol>
+
+		<h1> women teamz </h1>
+		<ol>
+			{% for woman in women %}
+				<li>{{woman.name}}</li>
+			{% endfor %}
+		</ol>
+
+		<h1> Hockey Pukes</h1>
+		<ol>
+			{% for puck in puckers %}
+				<li>{{puck.name}}</li>
+			{% endfor %}
+		</ol>
+
+		<h1> not football </h1>
+		<ol>
+			{% for sport in schmootball %}
+				<li>{{sport.name}}</li>
+			{% endfor %}
+		</ol>
+
+		<h1> Fredrickson meet me in the sports conference room</h1>
+		<ol>
+			{% for conference in conferences %}
+				<li>{{conference.name}}</li>
+			{% endfor %}
+		</ol>
+		<h1> worst coast </h1>
+		<ol>
+			{% for league in atlantic %}
+				<li>{{league.name}}</li>
+			{% endfor %}
+		</ol>
+		<h1> DALLAGS </h1>
+		<ol>
+			{% for teams in dallas %}
+				<li>{{teams.team_name}}</li>
+			{% endfor %}
+		</ol>
+
+		<h1> raptor </h1>
+		<ol>
+			{% for teams in raptors %}
+				<li>{{teams.location}}</li>
+			{% endfor %}
+		</ol>
+		<h1> some cities </h1>
+		<ol>
+			{% for teams in cities %}
+				<li>{{teams.team_name}}</li>
+			{% endfor %}
+		</ol>
+		<h1> ttms</h1>
+		<ol>
+			{% for teams in tteams %}
+				<li>{{teams.team_name}}</li>
+			{% endfor %}
+		</ol>
+		<h1> ORDER OF TEAM</h1>
+		<ol>
+			{% for teams in alphateam %}
+				<li>{{teams.location}} {{teams.team_name}}</li>
+			{% endfor %}
+		</ol>
+		<h1> backwardsland </h1>
+		<ol>
+			{% for teams in betateam %}
+				<li>{{teams.team_name}}</li>
+			{% endfor %}
+		</ol>
+		<h1> cooperscooper </h1>
+		<ol>
+			{% for athletes in coopers %}
+				<li>{{athletes.first_name}} {{athletes.last_name}}</li>
+			{% endfor %}
+		</ol>
+		<h1> Joshshs</h1>
+		<ol>
+			{% for mans in joshuas %}
+				<li>{{mans.first_name}} {{mans.last_name}}</li>
+			{% endfor %}
+		</ol>
+		<h1> not josh cooper</h1>
+		<ol>
+			{% for coopers in notjoshcooper%}
+				<li>{{coopers.first_name}} {{coopers.last_name}}</li>
+			{% endfor %}
+		</ol>
+		<h1> alex and wyatt </h1>
+		<ol>
+			{% for boyz in alexandwyatt %}
+				<li>{{boyz.first_name}} {{boyz.last_name}}</li>
+			{% endfor %}
+		</ol>
+		
+
+
+
 	</body>
 </html>
